@@ -3,5 +3,10 @@
   "displayName": "Nebra Hotspot",
   "expo": {
     "scheme": "makerappscheme"
+  },
+  "android": {
+    "permissions": [
+      "READ_PHONE_STATE"
+    ]
   }
 }

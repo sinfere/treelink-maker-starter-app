@@ -1,6 +1,13 @@
-import { Hotspot, PocReceiptsV1 } from '@helium/http'
-import { heliumHttpClient } from '@helium/react-native-sdk'
+import Client, { Hotspot, PocReceiptsV1, Network } from '@helium/http'
+// import { createHttpClient } from '@helium/react-native-sdk'
+// import { heliumHttpClient } from '@helium/react-native-sdk'
 import { fromNow } from './timeUtils'
+
+// const getHttpClient = async () => {
+//   return await createHttpClient("https://blockchain-base-url.com")
+// }
+
+const heliumHttpClient = new Client(Network.testnet)
 
 export const submitTxn = async (txn: string) => {
   return heliumHttpClient.transactions.submit(txn)
