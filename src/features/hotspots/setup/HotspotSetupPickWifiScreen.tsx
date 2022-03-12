@@ -19,6 +19,7 @@ import Checkmark from '../../../assets/images/check.svg'
 import { RootNavigationProp } from '../../../navigation/main/tabTypes'
 import { getAddress, getSecureItem } from '../../../utils/secureAccount'
 import { getHotspotDetails } from '../../../utils/appDataClient'
+// import { Logger } from '@react-native-mapbox-gl/maps'
 
 const WifiItem = ({
   name,
@@ -87,10 +88,17 @@ const HotspotSetupPickWifiScreen = () => {
   }, [wifiNetworks])
 
   const navSkip = useCallback(async () => {
+    console.warn('STRTING NAV SKIP')
     const token = await getSecureItem('walletLinkToken')
+    console.warn(`Got token ${token}`)
     if (!token) return
+    console.warn('Getting address')
+
     const address = await getAddress()
+    console.warn(`Got address ${address}`)
+
     const hotspot = await getHotspotDetails(hotspotAddress)
+    console.warn(`Got hotspot ${hotspot}`)
 
     if (hotspot && hotspot.owner === address) {
       navigation.replace('OwnedHotspotErrorScreen')
