@@ -124,29 +124,21 @@ export const getBlockHeight = (params?: { maxTime?: string }) => {
 
 export const getCurrentOraclePrice = async () => {
   try {
-    return privateHeliumClient.oracle.getCurrentPrice()
-  } catch (error) {
-    try {
-      return heliumHttpClient.oracle.getCurrentPrice()
-    } catch (err) {
-      throw new Error(
-        'Helium API request failed while trying to retrieve the current oracle price.',
-      )
-    }
+    return heliumHttpClient.oracle.getCurrentPrice()
+  } catch (err) {
+    throw new Error(
+      'Helium API request failed while trying to retrieve the current oracle price.',
+    )
   }
 }
 
 export const getPredictedOraclePrice = async () => {
   try {
-    return privateHeliumClient.oracle.getPredictedPrice()
+    return heliumHttpClient.oracle.getPredictedPrice()
   } catch (error) {
-    try {
-      return heliumHttpClient.oracle.getPredictedPrice()
-    } catch (err) {
-      throw new Error(
-        'Helium API request failed while trying to retrieve the predicted oracle price.',
-      )
-    }
+    throw new Error(
+      'Helium API request failed while trying to retrieve the predicted oracle price.',
+    )
   }
 }
 
