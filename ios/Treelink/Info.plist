@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Nebra</string>
+	<string>Treelink</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -53,19 +53,19 @@
 		</dict>
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Allow Nebra Hotspot to connect to and manage your Hotspots</string>
+	<string>Allow Treelink Hotspot to connect to and manage your Hotspots</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Allow Nebra Hotspot App to use your Bluetooth to connect to and onboard your hotspot</string>
+	<string>Allow Treelink Hotspot App to use your Bluetooth to connect to and onboard your hotspot</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Allow Nebra Hotspot to use your camera to add hotspots</string>
+	<string>Allow Treelink Hotspot to use your camera to add hotspots</string>
 	<key>NSFaceIDUsageDescription</key>
-	<string>Allow Nebra Hotspot to authenticate with Face ID</string>
+	<string>Allow Treelink Hotspot to authenticate with Face ID</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Allow Nebra Hotspot to use your location to add your Hotspots to the network</string>
+	<string>Allow Treelink Hotspot to use your location to add your Hotspots to the network</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Allow Nebra Hotspot to use your location to add Hotspots to the network and explore Hotspots around you</string>
+	<string>Allow Treelink Hotspot to use your location to add Hotspots to the network and explore Hotspots around you</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Allow Nebra Hotspot to use the microphone</string>
+	<string>Allow Treelink Hotspot to use the microphone</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>InputMono-Bold.ttf</string>

@@ -1,4 +1,4 @@
-package com.nebra.helium.maker;
+package com.treelink.starter;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

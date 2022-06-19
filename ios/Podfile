@@ -7,7 +7,7 @@ platform :ios, '12.1'
 require 'json'
 podfile_properties = JSON.parse(File.read('./Podfile.properties.json')) rescue {}
 
-target 'Nebra' do
+target 'Treelink' do
   use_expo_modules!
   config = use_native_modules!
 
@@ -16,7 +16,7 @@ target 'Nebra' do
     :hermes_enabled => podfile_properties['expo.jsEngine'] == 'hermes'
   )
 
-  target 'NebraTests' do
+  target 'TreelinkTests' do
     inherit! :complete
     # Pods for testing
   end

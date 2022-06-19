@@ -1,4 +1,4 @@
-package com.nebra.helium.maker;
+package com.treelink.starter;
 import expo.modules.ReactActivityDelegateWrapper;
 import com.facebook.react.ReactActivityDelegate;
 
@@ -22,7 +22,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "Nebra";
+    return "Treelink";
   }
 
   @Override
